@@ -30,8 +30,7 @@ namespace CoreWUS.Http
                         {
                             bool valid = cert.Thumbprint.Replace(":", "").Equals(serverThumbprint?.Replace(":", ""), StringComparison.InvariantCultureIgnoreCase);
                             logger?.Log(valid ? LogLevel.Debug : LogLevel.Error, $"Validate server certificate: {cert.Thumbprint} {valid}");
-                            //return valid;
-                            return true; //TODO why is this wrong?
+                            return valid;
                         };
                         _clientMap.Add(key, new HttpClient(handler)
                         {
