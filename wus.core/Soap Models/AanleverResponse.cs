@@ -1,6 +1,6 @@
 namespace CoreWUS
 {
-    [System.Xml.Serialization.XmlRoot(Namespace="http://logius.nl/digipoort/koppelvlakservices/1.2/")]
+    [System.Xml.Serialization.XmlRoot(Namespace="http://logius.nl/digipoort/koppelvlakservices/1.3/")]
     public class aanleverResponse
     {
         public string kenmerk;

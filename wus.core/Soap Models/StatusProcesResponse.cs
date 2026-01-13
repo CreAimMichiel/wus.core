@@ -1,6 +1,6 @@
 namespace CoreWUS
 {
-    [System.Xml.Serialization.XmlRoot(Namespace="http://logius.nl/digipoort/koppelvlakservices/1.2/")]
+    [System.Xml.Serialization.XmlRoot(Namespace="http://logius.nl/digipoort/koppelvlakservices/1.3/")]
     public partial class getNieuweStatussenProcesResponse
     {
         //[System.Xml.Serialization.XmlArrayAttribute(ElementName="getNieuweStatussenProcesReturn")]
@@ -8,7 +8,7 @@ namespace CoreWUS
         public StatusResultaat[] getNieuweStatussenProcesReturn;
     }
 
-    [System.Xml.Serialization.XmlRoot(Namespace="http://logius.nl/digipoort/koppelvlakservices/1.2/")]
+    [System.Xml.Serialization.XmlRoot(Namespace="http://logius.nl/digipoort/koppelvlakservices/1.3/")]
     public partial class getStatussenProcesResponse
     {
         [System.Xml.Serialization.XmlArrayItemAttribute(IsNullable=false)]

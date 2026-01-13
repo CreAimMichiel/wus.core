@@ -112,7 +112,7 @@ namespace CoreWUS
             using (X509Certificate2 cert = new X509Certificate2(Convert.FromBase64String(securityTokenNode.InnerText)))
             {
                 SignedXmlWithId signedXml = new SignedXmlWithId(xmlDocument);
-                XmlNodeList nodeList = xmlDocument.GetElementsByTagName("Signature");
+                XmlNodeList nodeList = xmlDocument.GetElementsByTagName("Signature", "http://www.w3.org/2000/09/xmldsig#");
                 signedXml.LoadXml((XmlElement)nodeList[0]);
                 _logger?.Log(LogLevel.Debug, "End");
                 return signedXml.CheckSignature(cert, true);

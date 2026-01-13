@@ -1,7 +1,7 @@
 namespace CoreWUS
 {
 	[System.Diagnostics.DebuggerStepThroughAttribute()]
-	[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://logius.nl/digipoort/koppelvlakservices/1.2/")]
+	[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://logius.nl/digipoort/koppelvlakservices/1.3/")]
 	public partial class berichtInhoudType
 	{
 	    [System.Xml.Serialization.XmlElementAttribute(DataType="normalizedString", Order=0)]
